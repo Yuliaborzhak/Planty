@@ -1,0 +1,3 @@
+/src/styles/**/*.scss
+/src/blocks/modules/**/*.html
+src/blocks/modules/header/header.html
