@@ -1,5 +1,153 @@
-//Colors
-$accent-prim: #DDF247;
-$accent-sec: #DEEC3C;
-$base-prim: #000;
-$base-sec: #F4F4F4;
+// Project variables
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+// Paths
+$images__path--root: "../img/";
+
+
+// Sizes
+//////////////////////////////////////////////////////
+
+$padding--container: 16px;
+$header--h-desk: 93px;
+$header--h-mobile: 48px;
+//$border-width: 2px;
+$sp--38: 38px;
+
+// Grid
+//////////////////////////////////////////////////////
+$gutter: 16px;
+$columns: 12;
+
+
+// Elements
+//////////////////////////////////////////////////////
+
+
+
+// Buttons
+
+//$buttons__border-radius: 10px;
+
+//$buttons__height: 70px;
+
+
+// Inputs
+
+//$inputs__height: 70px;
+
+
+// Views
+//////////////////////////////////////////////////////
+
+//$loader__size--default: 100px;
+
+//$storage-message__height: 80px;
+
+//$header__height: 100px;
+
+
+// Layouts
+//////////////////////////////////////////////////////
+
+//$layouts__modal: 2500;
+//$layouts__fixed: 2000;
+//$layouts__popups: 1500;
+//$layouts__content: 1000;
+
+
+// Effects
+//////////////////////////////////////////////////////
+//
+//$fade: 0.2;
+//$fade--percent: 8%;
+//
+//$shadows__coords-x: 0;
+//$shadows__coords-y: 0;
+//$shadows__size: 10px;
+//$shadows__stretch: 0;
+//
+//$transition-duration: 0.2s;
+//$transition-timing-function: ease-in-out;
+//$transition-delay: 0s;
+//
+//$animation-duration: $transition-duration * 3;
+
+
+// Colors
+//////////////////////////////////////////////////////
+
+
+// Palette
+
+$colors__white: #fff;
+$colors__black: #000;
+
+$colors__primary: #DDF247;
+$colors__second: #DEEC3C;
+
+
+// Grays
+
+$colors__grays--lighter: #F4F4F4;
+$colors__grays--medium: #C7C7C7;
+
+
+// Text
+
+$colors__text: #000;
+
+
+// Links
+
+//$colors__link: $colors__primary;
+//$colors__link--hover: darken($colors__primary, $fade);
+
+
+// Borders and shadows
+
+$colors__border: #dadada;
+
+//$colors__shadows: $colors__black;
+
+
+// Functional
+
+$colors__placeholder: $colors__border;
+
+
+// Breakpoints and containers
+//////////////////////////////////////////////////////
+
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1440px
+) !default;
+
+// Minimum Supported Width
+$breakpoints__min:                 320px;
+
+// Extra small screen / XS / phone
+$breakpoints__xs359:                  359px;
+
+// Small screen / SM / tablet
+$breakpoints__sm:                  576px;
+
+// Medium screen / MD desktop / нетбуки типо чтоле
+$breakpoints__md:                  768px;
+
+// Large screen / LG desktop / небольшие экраны - ноуты
+$breakpoints__lg:                  992px;
+
+// Extra Large screen
+$breakpoints__xl:                  1440px;
+
+$breakpoints__xs_max:              ($breakpoints__sm - 1);
+$breakpoints__sm_max:              ($breakpoints__md - 1);
+$breakpoints__md_max:              ($breakpoints__lg - 1);
+$breakpoints__lg_max:              ($breakpoints__xl - 1);

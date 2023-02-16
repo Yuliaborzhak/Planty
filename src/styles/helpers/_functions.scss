@@ -1,3 +1,19 @@
-@function rem($px) {
-    @return ($px / 16) +rem;
+// Project functions
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+//
+//@function rem($px) {
+//    @return ($px / 16) +rem;
+//}
+
+
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function unitToNumber($number) {
+    @if type-of($number) == "number" and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+
+    @return $number;
 }

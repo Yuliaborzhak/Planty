@@ -1,17 +1,22 @@
-// Переменные, миксины, функции
-@import "helpers/variables";
-@import "helpers/mixins";
-@import "helpers/functions";
+// Project styles
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+// Stylebase for components
+@import "_stylebase";
+
+// App styles
+@import "global/_app";
+@import "global/_elements";
+@import "global/_widgets";
+@import "global/_layout";
+@import "global/_fixes";
+
 
 // CSS-файлы библиотек
 @import "vendor/libs";
 
-// Основное
-@import "base/fonts";
-@import "base/general";
-@import "base/reset";
-@import "base/type";
-
 
 // БЭМ-блоки
 @import "../blocks/modules";
+
