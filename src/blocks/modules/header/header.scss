@@ -1,0 +1,54 @@
+@import "../../../styles/helpers/variables";
+@import "../../../styles/helpers/mixins";
+
+.header {
+  background-color: green;
+  height: $header--h-mobile;
+  @include lg {
+    height: $header--h-desk;
+  }
+
+  &__link {
+    @include lg {
+      padding: 0 22px;
+    }
+  }
+  &__icon {
+    padding-left: 39px;
+    @include lg {
+      padding-left: 32px;
+    }
+  }
+}
+
+.icon--logo {
+  min-width: 73px;
+
+}
+
+.icon--logo-gadgets-medium {
+  //max-width: 123px;
+  @include size(73px, 21px);
+  @include lg {
+    @include size(123px, 36px);
+  }
+}
+.icon--logo-gadgets-big {
+  @include size(156px, 45px);
+  @include lg {
+    @include size(123px, 36px);
+  }
+}
+
+.icon18-24 {
+  @include size(18px, 18px);
+  @include lg {
+    @include size(24px, 24px);
+  }
+}
+//.icon--burger {
+//  @include lg {
+//
+//  }
+//}
+
