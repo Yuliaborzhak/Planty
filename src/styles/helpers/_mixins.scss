@@ -243,20 +243,25 @@ $unit: 'px';
 
 
 // Links
-//@mixin link-color($color, $color-hover) {
-//  will-change: color;
-//  @include transitions(color);
-//
-//  &,
-//  &:focus {
-//    color: $color;
-//  }
-//
-//  &:hover,
-//  &:active {
-//    color: $color-hover;
-//  }
-//}
+@mixin link-color($color, $color-hover) {
+  //will-change: color;
+  //@include transitions(color);
+
+  & {
+    transition: $transition-duration;
+  }
+  &,
+  &:focus {
+    color: $color;
+    transition: $transition-duration;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-hover;
+    transition: $transition-duration;
+  }
+}
 
 
 // Effects
@@ -297,4 +302,13 @@ $unit: 'px';
   }
 
   @return $unfoldedTransition;
+}
+
+
+//////////////////////
+//Hovers
+
+@mixin hover-fill-primary {
+  fill: $colors__primary;
+  stroke: $colors__primary;
 }

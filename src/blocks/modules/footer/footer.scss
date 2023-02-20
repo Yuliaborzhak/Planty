@@ -47,7 +47,6 @@ body {
       left: $padding--container;
       display: block;
       width: calc(100% - #{$padding--container}*2);
-
       height: 1px;
       background-color: $colors__grays--medium;
     }
@@ -56,13 +55,19 @@ body {
       padding-top: 0;
       justify-content: flex-end;
 
-      .footer__icons::before {
+      &::before {
         display: none;
       }
     }
   }
   &__icon {
-    padding-left: 60px;
+    margin-left: 78px;
+    @include lg {
+      margin-left: 60px;
+    }
+  }
+  &__icon:first-of-type {
+    margin-left: 0;
   }
 
   .icon--logo {

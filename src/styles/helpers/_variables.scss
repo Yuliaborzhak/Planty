@@ -68,7 +68,7 @@ $columns: 12;
 //$shadows__size: 10px;
 //$shadows__stretch: 0;
 //
-//$transition-duration: 0.2s;
+$transition-duration: 0.2s;
 //$transition-timing-function: ease-in-out;
 //$transition-delay: 0s;
 //
@@ -83,6 +83,7 @@ $columns: 12;
 
 $colors__white: #fff;
 $colors__black: #000;
+$colors__black__lighter: lighten(#000, 50%);
 
 $colors__primary: #DDF247;
 $colors__second: #DEEC3C;
