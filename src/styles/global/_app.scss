@@ -4,6 +4,7 @@
 
 
 @import "../helpers/variables";
+@import "../helpers/mixins";
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -53,6 +54,46 @@ h1, h2, h3, h4, h5, h6 {
 //    }
 //  }
 //}
+
+.icon--logo {
+  min-width: 73px;
+
+}
+
+.icon--logo-gadgets-medium {
+  //max-width: 123px;
+  @include size(73px, 21px);
+  @include lg {
+    @include size(123px, 36px);
+  }
+}
+.icon--logo-gadgets-big {
+  @include size(156px, 45px);
+  @include lg {
+    @include size(123px, 36px);
+  }
+}
+
+.icon18-24 {
+  @include size(18px, 18px);
+  @include lg {
+    @include size(24px, 24px);
+  }
+}
+
+.icon31-24 {
+  @include size(31px, 31px);
+  @include lg {
+    @include size(24px, 24px);
+  }
+}
+//.icon--burger {
+//  @include lg {
+//
+//  }
+//}
+
+
 
 .nav-link {
   @include text($font-family__menu, $font-size--base, $font-weight__regular);

@@ -1,3 +1,4 @@
+@import "../helpers/variables";
 @import "../helpers/mixins";
 // Project Utilities
 //////////////////////////////////////////////////////
@@ -160,3 +161,20 @@
   }
 }
 // stylelint-enable declaration-no-important
+
+
+.hover-svg-lighten {
+  transition: $transition-duration;
+  svg,
+  path {
+    transition: $transition-duration;
+  }
+  &:hover,
+  &:focus {
+    svg path {
+      transition: $transition-duration;
+      fill: $colors__black__lighter;
+      //stroke: $colors__black__lighter;
+    }
+  }
+}
