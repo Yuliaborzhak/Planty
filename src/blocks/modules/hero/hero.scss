@@ -1,31 +1,44 @@
 .hero {
-  margin-top: 500px;
-  &__img {
-    $h--D: 746px;
-    $h--T: 450px;
-    $h--M: 198px;
-    height: $h--M;
-    @include md {
-      height: $h--T;
-    }
-    @include lg {
-      height: $h--D;
-    }
-  }
+  margin-top: 100px;
+  //&__img {
+  //  $h--D: 746px;
+  //  $h--T: 450px;
+  //  $h--M: 198px;
+  //  height: $h--M;
+  //  @include md {
+  //    height: $h--T;
+  //  }
+  //  @include lg {
+  //    height: $h--D;
+  //  }
+  //}
   &__content {
     $top: 9.7%;
     $left: 8.7%;
-    $w: 30%;
+    $w--D: 30%;
+    $w--M: 70%;
 
     top: $top;
     left: $left;
-    width: $w;
+    width: $w--M;
+
+    @include xl {
+      width: $w--D;
+    }
   }
 
   &__heading,
   &__info {
-    $mb:10px;
+    $mb: 10px;
 
     margin-bottom: $mb;
+  }
+
+  &__info {
+    $font-size--M: 10px;
+
+    @include gadgets {
+      font-size: $font-size--M;
+    }
   }
 }

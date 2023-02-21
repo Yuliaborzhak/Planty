@@ -69,15 +69,32 @@ $btn__font-size--D: 14px;
   }
 }
 
-.btn-transparent {
+.link {
+  display: flex;
+  //justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: auto;
+  //@extend %string-ellipsis-protection;
+  @include transitions(all);
+  user-select: none;
+  -webkit-appearance: none;
+}
+.link-transparent {
   $svg__ml--M: 1px;
   $svg__ml--D: 38px;
   $svg__w--M: 6px;
   $svg__w--D: 24px;
-  @include text($font-family__sans-serif, $font-size--small, $font-weight__medium);
+
+  @include text($font-family__sans-serif, 7px, $font-weight__medium);
   color: $colors__black;
+
+  @include lg {
+    @include text($font-family__sans-serif, $font-size--small, $font-weight__medium);
+  }
   svg {
     position: relative;
+    left: 0;
     @include size($svg__w--M, $svg__w--M);
     margin-left: $svg__ml--M;
     @include transitions(all);
@@ -89,8 +106,8 @@ $btn__font-size--D: 14px;
   &:not(:disabled):hover,
   &:not(:disabled):focus {
     svg {
-      left: 10px;
       @include transitions(all);
+      left: 10px;
     }
 
   }

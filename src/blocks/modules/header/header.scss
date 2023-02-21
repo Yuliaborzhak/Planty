@@ -2,7 +2,7 @@
 @import "../../../styles/helpers/mixins";
 
 .header {
-  background-color: green;
+  background-color: $colors__white;
   height: $header--h-mobile;
   z-index: 10;
   @include lg {
