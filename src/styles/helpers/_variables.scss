@@ -69,8 +69,8 @@ $columns: 12;
 //$shadows__stretch: 0;
 //
 $transition-duration: 0.2s;
-//$transition-timing-function: ease-in-out;
-//$transition-delay: 0s;
+$transition-timing-function: ease-in-out;
+$transition-delay: 0s;
 //
 //$animation-duration: $transition-duration * 3;
 
@@ -111,6 +111,7 @@ $colors__text: #000;
 
 $colors__border: #dadada;
 
+$border-radius__btn: 26px;
 //$colors__shadows: $colors__black;
 
 
@@ -135,7 +136,7 @@ $grid-breakpoints: (
 $breakpoints__min:                 320px;
 
 // Extra small screen / XS / phone
-$breakpoints__xs359:                  359px;
+$breakpoints__xs360:                  360px;
 
 // Small screen / SM / tablet
 $breakpoints__sm:                  576px;
@@ -149,6 +150,7 @@ $breakpoints__lg:                  992px;
 // Extra Large screen
 $breakpoints__xl:                  1440px;
 
+$breakpoints__min_max:              ($breakpoints__xs360 - 1);
 $breakpoints__xs_max:              ($breakpoints__sm - 1);
 $breakpoints__sm_max:              ($breakpoints__md - 1);
 $breakpoints__md_max:              ($breakpoints__lg - 1);

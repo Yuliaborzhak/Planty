@@ -1,9 +1,6 @@
-body {
-  height: 600px;
-}
+
 .footer {
-  margin-top: 200px;
-  padding: 16px 0 40px;
+  padding: 22px 0 40px;
   background-color: $colors__grays--lighter;
   @include lg {
     padding: 60px 0;

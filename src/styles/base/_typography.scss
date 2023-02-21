@@ -1,4 +1,5 @@
-@import "../helpers/variables.scss";
+@import "../helpers/variables";
+@import "../helpers/mixins";
 // Typography
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
@@ -19,6 +20,7 @@ $font-size__coefficient--medium: 2; //32
 $font-size__coefficient--normal: 1.5; //24
 $font-size__coefficient--small: 1.25; //20
 $font-size__coefficient--xsmall: 0.75; //12
+$font-size__coefficient--xxsmall: 0.6875; //11
 
 $font-size--extra-large: round($font-size--base * $font-size__coefficient--extra-large);
 $font-size--large: round($font-size--base * $font-size__coefficient--large);
@@ -26,6 +28,7 @@ $font-size--medium: round($font-size--base * $font-size__coefficient--medium);
 $font-size--normal: round($font-size--base * $font-size__coefficient--normal);
 $font-size--small: round($font-size--base * $font-size__coefficient--small);
 $font-size--xsmall: round($font-size--base * $font-size__coefficient--xsmall);
+$font-size--xxsmall: round($font-size--base * $font-size__coefficient--xxsmall);
 
 $line-height--computed: round($font-size--base * $line-height--base);
 //$line-height--large: floor($line-height--computed * $font-size__coefficient--large); // 34px
@@ -55,7 +58,7 @@ $font-weight__black: 900;
   font-size: $font-size;
   font-weight: $font-weight;
   //letter-spacing: $normal-letter-spacing;
-  line-height: floor($font-size * $line-height--base);
+  line-height: 1.2;
 
   //@if $font-size == $font-size--large {
   //  line-height: $line-height--large;
@@ -91,11 +94,18 @@ h1 {
 }
 
 h2 {
-  @include text($font-family__sans, $font-size--large, $font-weight__medium);
+  @include text($font-family__sans, $font-size--small, $font-weight__medium);
 
-  //@include xs {
-  //  @include text($font-family__sans, $font-size--normal, $font-weight__regular);
-  //}
+  @include md {
+    font-size: $font-size--medium;
+    //font-size: $font-size--medium;
+  }
+  @include lg {
+    font-size: $font-size--medium;
+  }
+  @include xl {
+    font-size: $font-size--large;
+  }
 }
 
 h3 {

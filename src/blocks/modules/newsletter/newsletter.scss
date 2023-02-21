@@ -1,0 +1,130 @@
+@import "../../../styles/helpers/variables";
+
+.newsletter {
+  $nl__pt--D: 50px;
+  $nl__pt--M: 67px;
+  $nl__pb--D: 27px;
+  $nl__pb--M: 25px;
+
+
+
+  padding: #{$nl__pt--D} 0 #{$nl__pb--D};
+  text-align: center;
+  @include lg {
+    text-align: left;
+  }
+
+
+
+
+          //newsletter-form
+          //newsletter-form__input
+  //&__btn {
+  //  min-width: 126px;
+  //  max-width: 40%;
+  //}
+
+
+
+
+  //
+  //.button:after {
+  //  content: "";
+  //  background: #f1f1f1;
+  //  display: block;
+  //  position: absolute;
+  //  padding-top: 300%;
+  //  padding-left: 350%;
+  //  margin-left: -20px !important;
+  //  margin-top: -120%;
+  //  opacity: 0;
+  //  transition: all 0.8s
+  //}
+  //
+  //.button:active:after {
+  //  padding: 0;
+  //  margin: 0;
+  //  opacity: 1;
+  //  transition: 0s
+  //}
+}
+
+.newsletter-form {
+
+
+  &--D {
+    $nl__form-pb--D: 10px;
+
+    $nl__form-mb--D: 3.2%;
+    $nl__form-pr--D: 42px;
+    $after__width: calc(100% - #{$nl__form-pr--D});
+
+
+    padding-bottom: $nl__form-pb--D;
+    margin-bottom: $nl__form-mb--D;
+    @include xl {
+      padding-right: $nl__form-pr--D;
+    }
+    &:after {
+      @include xl {
+        @include size($after__width, 0);
+      }
+    }
+  }
+
+  &--M {
+    $nl__form-pb--M: 7px;
+    $nl__form-mb--M: 38px;
+
+    padding-bottom: $nl__form-pb--M;
+    margin-bottom: $nl__form-mb--M;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include size(100%, 0);
+    border-bottom: 0.5px $colors__black solid;
+    @include lg {
+      border-bottom: 2px $colors__black solid;
+    }
+  }
+
+  &.success {
+    input,
+    button {
+      display: none;
+    }
+    .newsletter-form__success-message {
+      display: block !important;
+    }
+  }
+  &__btn {
+    $nl__btn-px--M: 19.5px;
+    $nl__btn-py--M: 6.5px;
+    $nl__btn-px--D: 30px;
+    $nl__btn-py--D: 10px;
+    $nl__btn-ml: 10px;
+
+    padding: $nl__btn-py--M $nl__btn-px--M;
+    margin-left: $nl__btn-ml;
+    @include md {
+      padding: $nl__btn-py--D $nl__btn-px--D;
+    }
+    @include lg {
+      padding: $nl__btn-py--D $nl__btn-px--D;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    background-color: transparent;
+
+  }
+
+  &__success-message {
+    display: none;
+  }
+}

@@ -1,3 +1,98 @@
+@import "../../styles/helpers/variables";
+@import "../../styles/base/typography";
+@import "../../styles/helpers/placeholders";
+@import "../../styles/helpers/mixins";
 // Elements styles
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
+
+.form {
+  position: relative;
+}
+
+
+//Buttons
+$btn__font-size--M: 10px;
+$btn__font-size--D: 14px;
+
+
+.btn {
+  $btn__min-w--M: 83px;
+  $btn__min-h--M: 24px;
+  $btn__min-w--D: 100px;
+  $btn__min-h--D: 36px;
+
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: $btn__min-w--M;
+  min-height: $btn__min-h--M;
+  width: auto;
+  border-radius: $border-radius__btn;
+  flex-shrink: 0;
+  @extend %string-ellipsis-protection;
+  @include transitions(all);
+  user-select: none;
+  -webkit-appearance: none;
+
+  @include xl {
+    min-width: $btn__min-w--D;
+    min-height: $btn__min-h--D;
+  }
+}
+
+.btn--text {
+  @include text($font-family__sans-serif, $btn__font-size--M, $font-weight__medium);
+  line-height: 1;
+  @include md  {
+    font-size: $btn__font-size--D;
+  }
+  @include lg {
+    font-size: $btn__font-size--D;
+  }
+}
+
+.btn-primary {
+  border: 1px solid $colors__black;
+  background-color: $colors__black;
+  color: $colors__white;
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
+    color: $colors__black;
+    background-color: $colors__white;
+
+  }
+  &[aria-disabled]:hover,
+  &[aria-disabled]:focus {
+    background-color: $colors__black;
+  }
+}
+
+.btn-transparent {
+  $svg__ml--M: 1px;
+  $svg__ml--D: 38px;
+  $svg__w--M: 6px;
+  $svg__w--D: 24px;
+  @include text($font-family__sans-serif, $font-size--small, $font-weight__medium);
+  color: $colors__black;
+  svg {
+    position: relative;
+    @include size($svg__w--M, $svg__w--M);
+    margin-left: $svg__ml--M;
+    @include transitions(all);
+    @include lg {
+      @include size($svg__w--D, $svg__w--D);
+      margin-left: $svg__ml--D;
+    }
+  }
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
+    svg {
+      left: 10px;
+      @include transitions(all);
+    }
+
+  }
+}
+

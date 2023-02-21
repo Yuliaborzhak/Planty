@@ -5,11 +5,13 @@
 
 @import "../helpers/variables";
 @import "../helpers/mixins";
+@import "../base/typography";
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+
 
 
 
@@ -105,3 +107,41 @@ h1, h2, h3, h4, h5, h6 {
 //    $icons__size: 24px;
 //    @include size($icons__size, $icons__size);
 //}
+
+
+// Customize Placeholder
+//////////////////////////////////////////////////////
+
+::-webkit-input-placeholder {
+  color: $colors__black !important;
+  @include text($font-family__sans-serif, $font-size--xxsmall, $font-weight__light);
+  @include lg {
+    font-size: $font-size--base;
+  }
+}
+::-moz-placeholder          {
+  color: $colors__black !important;
+  @include text($font-family__sans-serif, $font-size--xxsmall, $font-weight__light);
+  @include lg {
+    font-size: $font-size--base;
+  }
+} /* Firefox 19+ */
+:-moz-placeholder           {
+  color: $colors__black !important;
+  @include text($font-family__sans-serif, $font-size--xxsmall, $font-weight__light);
+  @include lg {
+    font-size: $font-size--base;
+  }
+} /* Firefox 18- */
+:-ms-input-placeholder      {
+  color: $colors__black !important;
+  @include text($font-family__sans-serif, $font-size--xxsmall, $font-weight__light);
+  @include lg {
+    font-size: $font-size--base;
+  }
+}
+
+:focus::-webkit-input-placeholder {color: transparent;}
+:focus::-moz-placeholder          {color: transparent;}
+:focus:-moz-placeholder           {color: transparent;}
+:focus:-ms-input-placeholder      {color: transparent;}
