@@ -24,6 +24,9 @@ gulp.task("styles", () => {
         .pipe(gulpif(!production, sourcemaps.init()))
         .pipe(plumber())
         .pipe(sass())
+        // .pipe(sass({
+        //     includePaths: ['./node_modules']
+        // }))
         .pipe(groupmedia())
         .pipe(gulpif(production, autoprefixer({
             cascade: false,
