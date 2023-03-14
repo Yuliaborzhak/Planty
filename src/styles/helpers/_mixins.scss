@@ -57,6 +57,11 @@ $unit: 'px';
     @content;
   }
 }
+@mixin md-up {
+  @media only screen and (min-width: $breakpoints__md) {
+    @content;
+  }
+}
 
 @mixin md-and-sm {
   @media only screen and (min-width: $breakpoints__sm) and (max-width: $breakpoints__md_max) {
@@ -85,6 +90,12 @@ $unit: 'px';
 
 @mixin min {
   @media only screen and (max-width: $breakpoints__min_max) {
+    @content;
+  }
+}
+
+@mixin min-and-sm {
+  @media only screen and (max-width: $breakpoints__sm_max) {
     @content;
   }
 }

@@ -305,12 +305,20 @@ input[type=number] {
   width: 50%;
 }
 
+.h-100 {
+  height: 100%;
+}
+
 .nowrap {
   white-space: nowrap;
 }
 
 .text--center {
   text-align: center;
+}
+
+.fit-cover {
+  object-fit: cover;
 }
 
 .visible--desktop,
@@ -608,7 +616,7 @@ strong {
   left: 0;
   width: 6px;
   height: 6px;
-  margin-left: 1px;
+  margin-left: 5px;
   transition: all 0.2s ease-in-out 0s;
 }
 
@@ -1050,7 +1058,7 @@ template {
 }
 
 .newsletter {
-  padding: 50px 0 67px;
+  padding: 27px 0 25px;
   text-align: center;
 }
 
@@ -1097,10 +1105,6 @@ template {
   display: none;
 }
 
-.hero {
-  margin-top: 100px;
-}
-
 .hero__content {
   top: 9.7%;
   left: 8.7%;
@@ -1110,6 +1114,38 @@ template {
 .hero__heading,
 .hero__info {
   margin-bottom: 10px;
+}
+
+.hero__img {
+  min-height: 150px;
+}
+
+.gallery {
+  margin-top: 200px;
+  padding-bottom: 14px;
+}
+
+.gallery__img-wrapper {
+  min-height: 250px;
+}
+
+@media only screen and (min-width: 768px) {
+  .link-transparent {
+    font-family: "Aeonik", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .link-transparent svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+  }
+
+  .gallery {
+    padding-bottom: 50px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1181,19 +1217,6 @@ template {
     font-size: 14px;
   }
 
-  .link-transparent {
-    font-family: "Aeonik", Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-  }
-
-  .link-transparent svg {
-    width: 24px;
-    height: 24px;
-    margin-left: 38px;
-  }
-
   .header {
     height: 93px;
   }
@@ -1229,6 +1252,7 @@ template {
   }
 
   .newsletter {
+    padding: 50px 0 67px;
     text-align: left;
   }
 
@@ -1309,6 +1333,16 @@ template {
 
   .hero__info {
     font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .p-align-right--M {
+    padding-right: 1vw !important;
+  }
+
+  .p-align-left--M {
+    padding-left: 1vw !important;
   }
 }
 

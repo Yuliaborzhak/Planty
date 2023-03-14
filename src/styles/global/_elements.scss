@@ -81,15 +81,15 @@ $btn__font-size--D: 14px;
   -webkit-appearance: none;
 }
 .link-transparent {
-  $svg__ml--M: 1px;
-  $svg__ml--D: 38px;
+  $svg__ml--M: 5px;
+  $svg__ml--D: 15px;
   $svg__w--M: 6px;
   $svg__w--D: 24px;
 
   @include text($font-family__sans-serif, 7px, $font-weight__medium);
   color: $colors__black;
 
-  @include lg {
+  @include md-up {
     @include text($font-family__sans-serif, $font-size--small, $font-weight__medium);
   }
   svg {
@@ -98,7 +98,7 @@ $btn__font-size--D: 14px;
     @include size($svg__w--M, $svg__w--M);
     margin-left: $svg__ml--M;
     @include transitions(all);
-    @include lg {
+    @include md-up {
       @include size($svg__w--D, $svg__w--D);
       margin-left: $svg__ml--D;
     }

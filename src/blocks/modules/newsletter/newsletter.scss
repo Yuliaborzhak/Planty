@@ -6,9 +6,10 @@
   $nl__pt--M: 27px;
   $nl__pb--M: 25px;
 
-  padding: #{$nl__pt--D} 0 #{$nl__pb--D};
+  padding: #{$nl__pt--M} 0 #{$nl__pb--M};
   text-align: center;
   @include lg {
+    padding: #{$nl__pt--D} 0 #{$nl__pb--D};
     text-align: left;
   }
 
