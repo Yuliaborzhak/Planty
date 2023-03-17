@@ -15,36 +15,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-//.container {
-//$width: 100%;
-
-//@include size($width, auto);
-//@extend %container;
-//@extend %m-auto;
-
-
-//width: 100%;
-//padding-right: 16px;
-//padding-left: 16px;
-//margin-right: auto;
-//margin-left: auto;
-//@media (min-width: 768px) {
-//max-width: 720px;
-//}
-//@media (min-width: 992px) {
-//    padding-right: 30px;
-//    padding-left: 30px;
-//    //max-width: 960px;
-//}
-//@media (min-width: 1200px) {
-//    padding-right: 50px;
-//    padding-left: 50px;
-//}
-//    @media (min-width: 1500px) {
-//        max-width: 1340px;
-//    }
-//}
-//
 //.icon {
 //  // корректируем путь до картинок
 //  $image-path: $images__path--root + "icons/";
@@ -63,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .icon--logo-gadgets-medium {
-  //max-width: 123px;
   @include size(73px, 21px);
   @include lg {
     @include size(123px, 36px);
@@ -89,24 +58,12 @@ h1, h2, h3, h4, h5, h6 {
     @include size(24px, 24px);
   }
 }
-//.icon--burger {
-//  @include lg {
-//
-//  }
-//}
-
 
 
 .nav-link {
   @include text($font-family__menu, $font-size--base, $font-weight__regular);
   @include link-color($colors__text, $colors__black__lighter);
 }
-
-//Example
-//.icon--logo {
-//    $icons__size: 24px;
-//    @include size($icons__size, $icons__size);
-//}
 
 
 // Customize Placeholder

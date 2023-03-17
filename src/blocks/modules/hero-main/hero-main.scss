@@ -1,7 +1,5 @@
 .hero-main {
   $img-wrapper-min-h: 150px;
-  //$pt--M: 24px;
-  //$pt--D: 50px;
   padding-top: $header--h-mobile;
   @include lg {
     padding-top: $header--h-desk;
@@ -14,28 +12,11 @@
   }
   &__content {
     $pt--M: 30px;
-    //$pt--D: 25%;
 
     height: 100%;
     @include gadgets {
       padding-top: $pt--M;
     }
-    //@include lg {
-    //  padding-top: $pt--D;
-    //}
-
-  //  $top: 9.7%;
-  //  $left: 8.7%;
-  //  $w--D: 30%;
-  //  $w--M: 70%;
-  //
-  //  top: $top;
-  //  left: $left;
-  //  width: $w--M;
-  //
-  //  @include xl {
-  //    width: $w--D;
-  //  }
   }
 
   &__heading {
@@ -63,11 +44,6 @@
       font-size: $font-size--D;
       margin-bottom: $mb--D;
     }
-    //
-    //
-    //@include lg {
-    //
-    //}
   }
 
   &__btn {

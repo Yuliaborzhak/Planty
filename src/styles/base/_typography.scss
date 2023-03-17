@@ -57,7 +57,6 @@ $font-weight__black: 900;
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
-  //letter-spacing: $normal-letter-spacing;
   line-height: 1.2;
 
   //@if $font-size == $font-size--large {
@@ -80,7 +79,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  //margin-bottom: $gutter / 2;
   @include text($font-family__sans-serif, $font-size--base, $font-weight__light);
 }
 
@@ -104,7 +102,6 @@ h2 {
 
   @include md {
     font-size: $font-size--medium;
-    //font-size: $font-size--medium;
   }
   @include lg {
     font-size: $font-size--medium;
@@ -134,7 +131,6 @@ strong {
   font-weight: $font-weight__bold;
 }
 
-//доделать по ходу
 //.text {
 ////  &--large {
 ////    @include text($font-family__sans, $font-size--large, $font-weight__sans__bold);

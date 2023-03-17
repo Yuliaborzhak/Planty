@@ -11,31 +11,17 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 
-//
 document.addEventListener("DOMContentLoaded", function () {
   console.log(1);
   var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
     spaceBetween: 10,
-    // effect: "fade",
-    // centeredSlides: true,
     slidesPerView: "auto",
     breakpoints: {
-      // 575: {
-      //     // slidesPerView: 2,
-      //     spaceBetween: 20,
-      // },
       768: {
-        // slidesPerView: 4,
         spaceBetween: 22
-        // slidesPerView: 34,
-        // centeredSlides: false,
       },
-
       992: {
-        // slidesPerView: 5,
         spaceBetween: 32
-        // slidesPerView: 3.5,
-        // centeredSlides: false,
       }
     }
   });

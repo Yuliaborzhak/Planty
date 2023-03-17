@@ -15,46 +15,9 @@
     text-align: left;
     padding: #{$nl__pt--D} 0 #{$nl__pb--D};
   }
-
-
-
-
-
-          //newsletter-form
-          //newsletter-form__input
-  //&__btn {
-  //  min-width: 126px;
-  //  max-width: 40%;
-  //}
-
-
-
-
-  //
-  //.button:after {
-  //  content: "";
-  //  background: #f1f1f1;
-  //  display: block;
-  //  position: absolute;
-  //  padding-top: 300%;
-  //  padding-left: 350%;
-  //  margin-left: -20px !important;
-  //  margin-top: -120%;
-  //  opacity: 0;
-  //  transition: all 0.8s
-  //}
-  //
-  //.button:active:after {
-  //  padding: 0;
-  //  margin: 0;
-  //  opacity: 1;
-  //  transition: 0s
-  //}
 }
 
 .newsletter-form {
-
-
   &--D {
     $nl__form-pb--D: 10px;
 
@@ -107,20 +70,6 @@
   &__btn {
     $btn-ml: 10px;
     margin-left: $btn-ml;
-    //$nl__btn-px--M: 19.5px;
-    //$nl__btn-py--M: 6.5px;
-    //$nl__btn-px--D: 30px;
-    //$nl__btn-py--D: 10px;
-    //$nl__btn-ml: 10px;
-    //
-    //padding: $nl__btn-py--M $nl__btn-px--M;
-    //margin-left: $nl__btn-ml;
-    //@include md {
-    //  padding: $nl__btn-py--D $nl__btn-px--D;
-    //}
-    //@include lg {
-    //  padding: $nl__btn-py--D $nl__btn-px--D;
-    //}
   }
 
   &__input {

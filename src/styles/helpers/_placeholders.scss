@@ -7,27 +7,6 @@
   transform: translate3d(0, 0, 0);
   will-change: scroll-position;
 }
-//
-//%container {
-//  padding-left: $padding--container;
-//  padding-right: $padding--container;
-//
-//  @include md {
-//    max-width: $container__width--md;
-//    padding-left: $padding--container * 2;
-//    padding-right: $padding--container * 2;
-//  }
-//
-//  @include lg {
-//    max-width: $container__width--lg;
-//    padding-left: $padding--container * 3;
-//    padding-right: $padding--container * 3;
-//  }
-//
-//  //@include gadgets {
-//  //  max-width: 100%;
-//  //}
-//}
 
 
 %m-auto {
