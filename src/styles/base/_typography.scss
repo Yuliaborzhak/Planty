@@ -85,12 +85,18 @@ p {
 }
 
 h1 {
-  @include text($font-family__h1, $font-size--extra-large, $font-weight__regular);
-
-  //@include xs {
-  //  @include text($font-family__sans, $font-size--normal, $font-weight__bold);
-  //}
   letter-spacing: -0.5px;
+
+  @include text($font-family__h1, $font-size--medium, $font-weight__regular);
+
+  @include md-up {
+    font-size: $font-size--large;
+  }
+
+
+  @include xl {
+    @include text($font-family__h1, $font-size--extra-large, $font-weight__regular);
+  }
 }
 
 h2 {

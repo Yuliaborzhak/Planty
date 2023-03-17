@@ -21,7 +21,19 @@ $btn__font-size--D: 14px;
   $btn__min-h--M: 24px;
   $btn__min-w--D: 100px;
   $btn__min-h--D: 36px;
+  
+  $btn-px--M: 19.5px;
+  $btn-py--M: 6.5px;
+  $btn-px--D: 30px;
+  $btn-py--D: 10px;
 
+  padding: $btn-py--M $btn-px--M;
+  @include md {
+    padding: $btn-py--D $btn-px--D;
+  }
+  @include lg {
+    padding: $btn-py--D $btn-px--D;
+  }
 
   display: inline-flex;
   justify-content: center;
@@ -83,10 +95,11 @@ $btn__font-size--D: 14px;
 .link-transparent {
   $svg__ml--M: 5px;
   $svg__ml--D: 15px;
-  $svg__w--M: 6px;
+  $svg__w--M: 10px;
   $svg__w--D: 24px;
+  $font--M: 10px;
 
-  @include text($font-family__sans-serif, 7px, $font-weight__medium);
+  @include text($font-family__sans-serif, $font--M, $font-weight__medium);
   color: $colors__black;
 
   @include md-up {
@@ -113,3 +126,21 @@ $btn__font-size--D: 14px;
   }
 }
 
+
+.preheading {
+  $font-size--M: 10px;
+  $font-size--T: 14px;
+  $font-size--D: 20px;
+
+  text-transform: uppercase;
+  @include text($font-family__sans-serif, $font-size--M, $font-weight__medium);
+
+  @include md {
+    font-size: $font-size--T;
+  }
+
+  @include lg {
+    font-size: $font-size--D;
+
+  }
+}

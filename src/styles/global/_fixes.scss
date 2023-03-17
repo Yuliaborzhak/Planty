@@ -6,3 +6,9 @@
 button::-moz-focus-inner {
   border: 0;
 }
+
+
+_::-webkit-full-page-media, _:future, :root .header__icon svg,
+.footer__icon svg {
+  flex: 1 0 auto;
+}

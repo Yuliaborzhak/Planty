@@ -1,13 +1,13 @@
 .gallery {
   $img-wrapper-min-h: 250px;
-  $pb--D: 50px;
-  $pb--M: 14px;
+  //$pb--D: 50px;
+  //$pb--M: 14px;
 
-  margin-top: 200px;
-  padding-bottom: $pb--M;
-  @include md-up {
-    padding-bottom: $pb--D;
-  }
+  //margin-top: 200px;
+  //padding-bottom: $pb--M;
+  //@include md-up {
+  //  padding-bottom: $pb--D;
+  //}
 
   &__img-wrapper {
     min-height: $img-wrapper-min-h;

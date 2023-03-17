@@ -8,10 +8,14 @@
 
   padding: #{$nl__pt--M} 0 #{$nl__pb--M};
   text-align: center;
-  @include lg {
+  @include md {
     padding: #{$nl__pt--D} 0 #{$nl__pb--D};
-    text-align: left;
   }
+  @include lg {
+    text-align: left;
+    padding: #{$nl__pt--D} 0 #{$nl__pb--D};
+  }
+
 
 
 
@@ -101,20 +105,22 @@
     }
   }
   &__btn {
-    $nl__btn-px--M: 19.5px;
-    $nl__btn-py--M: 6.5px;
-    $nl__btn-px--D: 30px;
-    $nl__btn-py--D: 10px;
-    $nl__btn-ml: 10px;
-
-    padding: $nl__btn-py--M $nl__btn-px--M;
-    margin-left: $nl__btn-ml;
-    @include md {
-      padding: $nl__btn-py--D $nl__btn-px--D;
-    }
-    @include lg {
-      padding: $nl__btn-py--D $nl__btn-px--D;
-    }
+    $btn-ml: 10px;
+    margin-left: $btn-ml;
+    //$nl__btn-px--M: 19.5px;
+    //$nl__btn-py--M: 6.5px;
+    //$nl__btn-px--D: 30px;
+    //$nl__btn-py--D: 10px;
+    //$nl__btn-ml: 10px;
+    //
+    //padding: $nl__btn-py--M $nl__btn-px--M;
+    //margin-left: $nl__btn-ml;
+    //@include md {
+    //  padding: $nl__btn-py--D $nl__btn-px--D;
+    //}
+    //@include lg {
+    //  padding: $nl__btn-py--D $nl__btn-px--D;
+    //}
   }
 
   &__input {

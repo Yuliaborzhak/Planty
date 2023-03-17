@@ -1,5 +1,12 @@
 .hero {
   $img-wrapper-min-h: 150px;
+  $pb--M: 24px;
+  $pb--D: 50px;
+
+  padding-bottom: $pb--M;
+  @include md-up {
+    padding-bottom: $pb--D;
+  }
 
   &__content {
     $top: 9.7%;

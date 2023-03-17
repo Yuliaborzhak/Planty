@@ -62,15 +62,15 @@
 }
 
 // Classic lists
-%list-style {
-  list-style-type: disc;
-  padding-left: $padding--container;
-  margin-bottom: $padding--container / 2;
-
-  > li {
-    margin-bottom: round($padding--container / 4);
-  }
-}
+//%list-style {
+//  list-style-type: disc;
+//  padding-left: $padding--container;
+//  margin-bottom: $padding--container / 2;
+//
+//  > li {
+//    margin-bottom: round($padding--container / 4);
+//  }
+//}
 
 // Quotes
 %quote-content {

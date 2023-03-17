@@ -1,0 +1,155 @@
+.bestseller {
+  $pb--D: 90px;
+  $pb--M: 44px;
+  $pt--D: 90px;
+  $pt--T: 44px;
+  $pt--M: 34px;
+
+  padding-top:   $pt--M;
+  padding-bottom: $pb--M;
+
+  @include md {
+    padding-bottom: $pb--D;
+    padding-top:   $pt--T;
+  }
+  @include lg {
+    padding-bottom: $pb--D;
+    padding-top:   $pt--D;
+  }
+
+  &__header {
+    $mb--M: 32px;
+    $mb--D: 52px;
+
+    margin-bottom: $mb--M;
+    @include lg {
+      margin-bottom: $mb--D;
+    }
+  }
+
+  &__preheading {
+    $mb--M: 16px;
+    $mb--D: 16px;
+
+    margin-bottom: $mb--M;
+
+    @include md-up {
+      margin-bottom: $mb--D;
+    }
+  }
+
+  &__header-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include md-up {
+      display: block;
+    }
+  }
+
+  &__heading {
+    $pr: 10px;
+    $mb--D: 37px;
+
+    max-width: 70%;
+    padding-right: $pr;
+    @include md-up {
+      max-width: 100%;
+      margin-bottom: $mb--D;
+    }
+  }
+
+  &__btn {
+    $min-w--T: 114px;
+    $min-w--D: 134px;
+
+    @include min-and-sm {
+      max-width: 30%;
+    }
+
+    @include md {
+      min-width: $min-w--T !important;
+    }
+    @include lg {
+      min-width: $min-w--D !important;
+    }
+  }
+
+  &__slider {
+    overflow: visible !important;
+  }
+
+  &__slide {
+    $mr--M: 10px;
+    $mr--T: 22px;
+    $mr--D: 32px;
+
+    max-width: calc(33% + #{$mr--M});
+
+    @include md {
+      max-width: calc(33% + #{$mr--T});
+    }
+    @include lg {
+       max-width: calc(25% + #{$mr--D});
+     }
+    @include xl {
+      max-width: calc(25% + #{$mr--D});
+    }
+  }
+
+  &__slide-img img {
+    width: 100%;
+  }
+
+  &__slide-bottom {
+    $mt--M: 3px;
+    $mt--D: 13px;
+
+    margin-top: $mt--M;
+    @include lg {
+      margin-top: $mt--D;
+
+    }
+  }
+
+  &__product-name,
+  &__price {
+    $font--M: 10px;
+    $font--T: 16px;
+    $font--D: 20px;
+    @extend %string-ellipsis-protection;
+
+    @include gadgets {
+      font-size: $font--M;
+    }
+    @include md {
+      font-size: $font--T;
+    }
+    @include not-gadgets {
+      font-size: $font--D;
+    }
+
+  }
+
+  &__product-name {
+    $mr: 10px;
+    margin-right: 10px;
+  }
+
+  &__price {
+
+
+    max-width: 35%;
+    flex-shrink: 0;
+
+    @include sm {
+      max-width: 35%;
+    }
+    @include md {
+      max-width: 40%;
+    }
+  }
+
+
+
+}
